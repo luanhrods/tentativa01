@@ -17,14 +17,18 @@ declare global {
 // This gets the static paths for all the unique products
 
 export async function getStaticPaths() {
-  const productEntries = await getCollection("products", ({ id }) =>
-    id.startsWith("en/")
+  const insightPosts = await getCollection("insights", ({ id }) => 
+    id.startsWith("pt/") || id.startsWith("en/") || id.startsWith("fr/")
   );
-  return productEntries.map((product) => {
-    const slugWithoutLang = product.slug.replace(/^en\//, ""); // Remove the "en/" prefix
+  
+  return insightPosts.map((post) => {
+    const slugWithoutLang = post.slug.replace(/^(pt|en|fr)\//, ""); // Remove o prefixo de idioma
+    const lang = post.slug.split('/')[0]; // Identifica o idioma
+
     return {
       params: { slug: slugWithoutLang },
-      props: { product },
+      props: { post },
+      locale: lang,
     };
   });
 }
