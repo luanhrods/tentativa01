@@ -30,7 +30,7 @@ export const SEO = {
 };
 
 export const OG = {
-  locale: "en_US",
+  locale: "pt_BR",
   type: "website",
   url: SITE.url,
   title: `${SITE.title}: : Hardware Tools & Construction Services`,
