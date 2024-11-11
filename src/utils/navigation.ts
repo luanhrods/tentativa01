@@ -1,38 +1,34 @@
 // An array of links for navigation bar
 const navBarLinks = [
-  { name: "Home", url: "/" },
-  { name: "Products", url: "/products" },
-  { name: "Services", url: "/services" },
+  { name: "Início", url: "/" },
+  { name: "Produtos", url: "/products" },
+  { name: "Serviços", url: "/services" },
   { name: "Blog", url: "/blog" },
-  { name: "Contact", url: "/contact" },
+  { name: "Fale conosco", url: "/contact" },
 ];
 // An array of links for footer
 const footerLinks = [
   {
-    section: "Ecosystem",
+    section: "Ecossistema",
     links: [
-      { name: "Documentation", url: "/welcome-to-docs/" },
-      { name: "Tools & Equipment", url: "/products" },
-      { name: "Construction Services", url: "/services" },
+      { name: "Termos de Privacidade", url: "/welcome-to-docs/" },
+      { name: "Nossos produtos", url: "/products" },
+      { name: "Nossos serviços", url: "/services" },
     ],
   },
   {
-    section: "Company",
+    section: "Sobre a Enchantè Digital",
     links: [
-      { name: "About us", url: "#" },
+      { name: "Sobre Nós", url: "#" },
       { name: "Blog", url: "/blog" },
-      { name: "Careers", url: "#" },
-      { name: "Customers", url: "#" },
+      { name: "Carreiras", url: "#" },
     ],
   },
 ];
 // An object of links for social icons
 const socialLinks = {
   facebook: "https://www.facebook.com/",
-  x: "https://twitter.com/",
-  github: "https://github.com/mearashadowfax/ScrewFast",
-  google: "https://www.google.com/",
-  slack: "https://slack.com/",
+  x: "https://twitter.com/enchantedigital",
 };
 
 export default {
