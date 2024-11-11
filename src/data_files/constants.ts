@@ -15,7 +15,7 @@ export const SEO = {
   structuredData: {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    inLanguage: "en-US",
+    inLanguage: "pt-BR",
     "@id": SITE.url,
     url: SITE.url,
     name: SITE.title,
